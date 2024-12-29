@@ -1,0 +1,54 @@
+# https://freeradical.zone/@bitartbot/113737780004979631
+f(x,y) = (-(((y / y) + (x / y)) | ((x % x) - (x | y)))) % 10
+
+# https://freeradical.zone/@bitartbot/113737544108947753
+f(x,y) = ((((~y) & (-x)) | (-(y & y))) - (((-x) / (-y)) | (~(y % x)))) % 12
+
+# https://freeradical.zone/@bitartbot/113737307610003760
+f(x,y) = (((~(y ^ x)) | (-(y & y))) % ((~(11 % y)) & (-(~x)))) % 2
+
+# https://freeradical.zone/@bitartbot/113737076002597004
+f(x,y) = ((((-y) * (15 + y)) % ((y | y) / (y - 23))) / ((~(24 * x)) & ((y ^ x) ^ (19 % x)))) % 10
+
+# https://freeradical.zone/@bitartbot/113736835781133251
+f(x,y) = (((-(22 * x)) * (-(x + 9))) / (((17 % x) - (y ^ x)) ^ (-(y % x)))) % 3
+
+# https://freeradical.zone/@bitartbot/113736600450106155
+f(x,y) = ((((~y) % (x - 8)) - (-(~y))) - (((~x) - (y / 4)) & (-(1 ^ y)))) % 9
+
+# https://freeradical.zone/@bitartbot/113736364080122196
+f(x,y) = ((-((~x) - (y | y))) | (((x + y) / (y % x)) * ((x * y) * (15 & y)))) % 3
+
+# https://freeradical.zone/@bitartbot/113736127943598344
+f(x,y) = (~(((2 / x) ^ (~y)) ^ ((x * x) * (x / x)))) % 5
+
+# https://freeradical.zone/@bitartbot/113735894248694125
+f(x,y) = ((((y & x) ^ (y + 5)) | ((19 ^ y) | (-x))) | ((~(y ^ y)) * ((-x) & (x % x)))) % 9
+
+# https://freeradical.zone/@bitartbot/113735656601677022
+f(x,y) = ((-(-(y & y))) - ((~(y & y)) % (~(~x)))) % 3
+
+# https://freeradical.zone/@bitartbot/113735421392851125
+f(x,y) = ((((x & x) * (y + 8)) / ((-y) - (y * 17))) | (((~x) + (14 - y)) ^ (~(x + 21)))) % 2
+
+# https://freeradical.zone/@bitartbot/113735184828017972
+f(x,y) = (((~(8 | y)) % ((17 ^ y) | (y / x))) / (((x * 23) / (y ^ x)) / ((-y) % (~x)))) % 5
+
+# https://freeradical.zone/@bitartbot/113734950699597427
+f(x,y) = ((((2 - x) * (14 ^ x)) ^ ((17 - y) | (8 & x))) * ((~(x * y)) - ((3 % y) * (x | 19)))) % 11
+
+# https://freeradical.zone/@bitartbot/113734712430475198
+f(x,y) = ((((x - 10) % (-y)) % ((5 * y) & (y ^ y))) - (((x - 17) / (x / y)) ^ ((x / y) ^ (x + 21)))) % 5
+
+# https://freeradical.zone/@bitartbot/113734477284317131
+f(x,y) = ((((y & x) % (-y)) | ((y | y) * (y ^ y))) % (((x ^ y) * (y / y)) % (-(3 % y)))) % 13
+
+# https://freeradical.zone/@bitartbot/113734241112186103
+f(x,y) = ((((-x) ^ (-y)) % ((y - y) | (-y))) ^ (-((14 & y) % (x & 10)))) % 7
+
+# https://freeradical.zone/@bitartbot/113734005217629368
+f(x,y) = ((((-x) / (y - 18)) ^ ((y / 2) % (x % x))) ^ (((y ^ y) & (x % y)) + ((~x) * (y - y)))) % 13
+
+# https://freeradical.zone/@bitartbot/113733769248844094
+f(x,y) = ((-((9 ^ x) ^ (x + 17))) * (~((~y) ^ (~x)))) % 10
+
