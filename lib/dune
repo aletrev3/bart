@@ -1,2 +1,11 @@
+(env
+ (dev
+   (flags (:standard -w -26 -w -27))))
+
+(ocamllex lexer)
+
+(menhir
+ (modules parser))
+
 (library
  (name bart))

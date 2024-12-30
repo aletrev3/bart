@@ -1,4 +1,5 @@
 (lang dune 3.17)
+(using menhir 3.0)
 
 (name bart)
 
@@ -7,9 +8,9 @@
 (source
  (github username/reponame))
 
-(authors "Author Name <author@example.com>")
+(authors "Ale Trejo Reveles" "Daniel Hillerström")
 
-(maintainers "Maintainer Name <maintainer@example.com>")
+(maintainers "Ale Trejo Reveles")
 
 (license LICENSE)
 
