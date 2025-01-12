@@ -40,5 +40,9 @@ atom:
 | x = NAME { () }
 | i = INT  { () }
 
+unary_expression:
+|atom OP expression { () }
+|LPAREN parenthesised_expression RPAREN unary_expression  { () }
+
 
 %%
