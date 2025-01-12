@@ -1,5 +1,5 @@
 %{
-
+open Ast
 %}
 
 %token LPAREN RPAREN
@@ -10,7 +10,7 @@
 %token <int> INT
 %token EOF
 
-%start <unit list> definitions
+%start <def list> definitions
 
 %%
 
@@ -21,28 +21,30 @@ mark_position(X):
 
 (* Top-level syntax *)
 definitions:
-| definition definitions { [] }
+| definition definitions { $1 :: $2 }
 | EOF { [] }
 
 definition:
-| f = NAME LPAREN x = NAME COMMA y = NAME RPAREN EQUAL expression { () }
+| f = NAME LPAREN x = NAME COMMA y = NAME RPAREN EQUAL e = expression { (f,x,y,e) }
 
 /* (x * 1024) + (y - 100) */
 expression:
-| parenthesised_expression { () }
-| expression OP parenthesised_expression { () }
-
-parenthesised_expression:
-| LPAREN expression RPAREN { () }
-| atom { () }
-
-atom:
-| x = NAME { () }
-| i = INT  { () }
+| unary_expression { $1  }
+| expression OP unary_expression { Binary( $1 , $2, $3 ) }
 
 unary_expression:
-|atom OP expression { () }
-|LPAREN parenthesised_expression RPAREN unary_expression  { () }
+| parenthesised_expression { $1 }
+| OP parenthesised_expression { Unary ($1, $2) }
+
+parenthesised_expression:
+| LPAREN expression RPAREN { $2 }
+| atom { $1 }
+
+atom:
+| x = NAME { Var x }
+| i = INT  { Integer i }
+
+
 
 
 %%
